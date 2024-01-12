@@ -16,5 +16,7 @@
 * AWS Simple Systems Manager  (SSM) - operations hub for your AWS applications and resources and a secure end-to-end management solution
 * AWS Secrets Manager  - manage, retrieve, and rotate database credentials, tokens, API keys, and other secrets
 * AWS Certificate Manager  (ACM) - provision and manage SSL/TLS certificates with AWS services and connected resources
+* Amazon CloudFront  - content delivery network (CDN) service built for high performance, security, and developer convenience
 
+* 
 
