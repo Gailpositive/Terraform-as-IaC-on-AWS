@@ -29,4 +29,34 @@
 * aws iam delete-role --role-name AWSCloud9SSMAccessRole
 * aws iam delete-instance-profile --instance-profile-name AWSCloud9SSMInstanceProfile
 
-## step 1: SET UP CLOUD 9 DEVELOPMENT AREA
+## STEP 1: Create Stack
+* Download yaml file into my local machine
+* On AWS console, open Cloudformation
+* Create stack → With new resources (standard)
+<img width="931" alt="101 create stack" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ba912dc5-e523-448a-8b11-7d52fec38bbb">
+
+* Click on template is ready
+<img width="930" alt="102" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/449afe11-38a1-4846-a128-dbb41d437a8d">
+
+* Upload the template file
+<img width="938" alt="103" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5122d8ab-73c0-46bb-8572-82b823431726">
+
+* Name the stack
+<img width="943" alt="104" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/13846923-ff96-4127-8cc2-ea6c2635324b">
+
+* Leave Configure stack options as defualt
+<img width="917" alt="105" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/851d76e5-15c6-45a2-973d-ef221c4cf572">
+
+* Review
+<img width="919" alt="106" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b8ae5fc0-2f34-4ce8-a93d-26dd357f9fe5">
+
+* Accept acknowledgement and submit
+<img width="955" alt="107" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/da827578-0b66-4531-a58f-1c26762608db">
+
+* Stack created
+<img width="930" alt="108" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1192e20e-920d-4c70-bfaa-0f4e74c708ba">
+
+### STEP 2: Launching Cloud9 Workspace
+<img width="928" alt="109" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5263d7fe-17e0-4a73-a632-d790285bbbb3">
+
+<img width="956" alt="110" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/f9b1c645-eeb1-40f7-9b67-07c7329c3568">
