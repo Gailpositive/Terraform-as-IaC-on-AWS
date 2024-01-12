@@ -101,3 +101,7 @@
 * The update to main.tf begins by creating local variables that define the VPC availability zone and CIDR block values, RDS instance values, EC2 instance type, and credentials for the Wordpress Admin user.
 * Next, the file defines data sources to look up definitions of the given AWS environment such as the current region, list of availability zones, ARNs of IAM policies, etc which will be used to create AWS resources.
 <img width="944" alt="118" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9b6b39e-3aff-417e-8172-b0961221ca15">
+<img width="955" alt="119" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/6063879b-8845-4a36-a6fe-6cd7e72cf5f1">
+
+* run terraform init command 
+<img width="940" alt="120 terraform init" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/cd71690e-0bf7-411c-a067-d063c212eaba">
