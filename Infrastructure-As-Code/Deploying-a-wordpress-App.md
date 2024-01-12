@@ -81,8 +81,11 @@
 * To confirm I am using the IAM role attached to the environment EC2 instance,
 * I run the command "aws sts get-caller-identity --no-cli-pager"
 <img width="929" alt="114" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d930c373-71ee-4f7d-8ad1-80feebaefd55">
-* 
+
+ ### STEP 5: Create And Update Input Variables, Provider, Local Values, And Data Sources
+* cd terraform
 <img width="948" alt="115" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/a871b01d-307e-487a-a420-f8456067cfa0">
+* 
 <img width="957" alt="116" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/e7f0065e-6001-40b4-a2f7-d3d488fd59ae">
 
 <img width="950" alt="117" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d9de3089-35aa-4c81-9145-b70f9fad7075">
