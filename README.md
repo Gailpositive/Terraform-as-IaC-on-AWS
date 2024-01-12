@@ -299,3 +299,44 @@ The terraform apply command executes the actions that are proposed from the Terr
 
 * terraform destroy
 The terraform destroy command deletes all remote resources that are managed by the current working directory's Terraform configuration. Note that if the resource was created outside of the particular Terraform configuration, it will not be destroyed.
+
+### Advanced Topics
+* Modules
+Modules are a way to provide organization to your Terraform configuration by using encapsulation and empowers the use of re-usable configurations. They containers for multiple resources that can be packaged together. For example, you may have a Network module containing resource configurations for a Virtual Private Network (VPC), subnets, and route tables.
+
+* Expressions
+Expressions either refer to or compute values of a configuration and can be used in many places in the Terraform language. Some examples of expressions include:
+
+* Conditional expressions (<CONDITION> ? <TRUE_VALUE> : <FALSE_VALUE>)
+Arithmetic, comparison, and logical operators (>=, %, !=, ...)
+Function calls (<FUNCTION_NAME(<ARG_1, ARG_2>)>)
+For expressions ([for s in var.list : upper(s)])
+Splat expressions (var.list[*].id)
+Functions
+With Terraform's support of many built-in functions, you can leverage them to transform and combine values. Examples of these functions include:
+
+* Numeric functions (min(list) - returns the smallest number in the set)
+String functions (join(separator, list) - produces a string that concatenates all the elements in the list with the separator)
+Date and time functions (formatdate(spec, timestamp) - converts a timestamp to a different time format)
+IP network functions (cidrsubnet(prefix, newbits, netnum) - calculates a subnet address with a given IP address prefix)
+
+* State Backend
+State backends are responsible for determining where state gets stored and provides the capability for state locking. State locking is an optional capability that allows you to prevent others from corrupting your state by locking the state. Even though state locking is optional, it is recommended as best practice to the state locking capability in team environments to prevent race conditions that can lead to conflicts, data loss, and state file corruption. Additionally, Terraform state can contain sensitive data (like database passwords, private keys, and sensitive resource names) thus it is recommended to enable encryption at rest when possible. With S3 backend, you can enable encryption at rest.
+
+An example of using S3 as the state backend:
+terraform {
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "path/to/terraform-dev.tfstate"
+    region = "us-east-1"
+  }
+}
+
+
+
+### For Additional References
+Expressions (https://developer.hashicorp.com/terraform/language/expressions )
+Functions (https://developer.hashicorp.com/terraform/language/functions)https://developer.hashicorp.com/terraform/language/functions)
+Modules  ( https://developer.hashicorp.com/terraform/language/modules )
+Backend ( https://developer.hashicorp.com/terraform/language/settings/backends/configuration )
+   
