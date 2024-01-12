@@ -58,8 +58,26 @@
 * Stack created
 <img width="930" alt="108" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1192e20e-920d-4c70-bfaa-0f4e74c708ba">
 
-### STEP 3: Launching Cloud9 Workspace
+### STEP 3: Launching Cloud9 Workspace And 
 * On cloud9 environment
 * Open cloud9 IDE
 <img width="928" alt="109" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5263d7fe-17e0-4a73-a632-d790285bbbb3">
 <img width="956" alt="110" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/f9b1c645-eeb1-40f7-9b67-07c7329c3568">
+
+### Finalize Cloud9 Configuration
+* Select file to unzip
+<img width="950" alt="111" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1b84a88c-2cf4-4426-817c-9d642b5af648">
+* Download/unzip the file with the command "unzip terraform.zip -d terraform"
+<img width="900" alt="112" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/01f37809-a621-4ff3-9cd9-cf2136eda3b7">
+* Close the welcome tab and lower terminal work area
+* Open a new terminal tab (Windows -> New Terminal) in the main work area
+
+### STEP 4: Update IAM Setting For My Workspace
+<img width="967" alt="113b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/519e7333-7677-45fe-876f-0aab7e400ef7">
+<img width="929" alt="114" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d930c373-71ee-4f7d-8ad1-80feebaefd55">
+<img width="948" alt="115" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/a871b01d-307e-487a-a420-f8456067cfa0">
+<img width="957" alt="116" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/e7f0065e-6001-40b4-a2f7-d3d488fd59ae">
+
+<img width="950" alt="117" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d9de3089-35aa-4c81-9145-b70f9fad7075">
+
+<img width="944" alt="118" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9b6b39e-3aff-417e-8172-b0961221ca15">
