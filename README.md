@@ -276,3 +276,26 @@ cidr_block - (Optional) The IPv4 CIDR block for the VPC. CIDR can be explicitly 
 Reference: aws_vpc Attributes ( https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc#attributes-reference )
 
 Resource attributes are exported to be available as reference to other resources, local variables or output variables
+
+### Terraform CLI
+Introduction
+Terraform provides a command line interface (CLI) that can be called with the terraform command once you've installed Terraform onto your system.
+
+Main commands for Terraform CLI are:
+<img width="598" alt="Terraform commands images" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/bb5e6d2a-a0d3-43be-854c-bd9bef46dd97">
+
+
+* terraform init
+The terraform init command initializes your Terraform working directory. It is the first command you run when writing a new Terraform configuration or when you clone an existing one from a repository as it performs multiple initialization steps to get your current working directory to use Terraform.
+
+* terraform validate
+The terraform validate command runs checks to verify that the Terraform configuration in the working directory is syntactically valid, but does not validate remote services like remote state and provider APIs. It is commonly used to validate reusable modules and ensure that the attribute names and value types are generally correct
+
+* terraform plan
+The terraform plan command creates and execution plan that provides you a preview of the changes that will be made to your infrastructure (ie. which resources will be created, which will be deleted, and which ones will be modified). If there are no changes to be made, Terraform will report that no changes will be made.
+
+* terraform apply
+The terraform apply command executes the actions that are proposed from the Terraform plan. It is best practice to leverage terraform validate and terraform plan prior to running this command so that you can ensure that you're deploying your resources thorough Terraform as intended
+
+* terraform destroy
+The terraform destroy command deletes all remote resources that are managed by the current working directory's Terraform configuration. Note that if the resource was created outside of the particular Terraform configuration, it will not be destroyed.
