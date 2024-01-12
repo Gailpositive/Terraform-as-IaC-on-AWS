@@ -332,11 +332,26 @@ terraform {
   }
 }
 
-
+### Creating input variables, provider, local values and data sources
+Input Variables
+Input Variables
+az_num - Set the number of availability zones to use
+namespace - Set a prefix for the resource names
+vpc_cidr_block - Set the IP address block for the virtual private cloud (VPC)
+Provider
+aws - Set the minimal provider version and default resource tags
+Local Values - temporary localized variables of common configs
+Data Sources
+aws_region - Get the current region
+aws_availability_zones - Get list of availability zones
+aws_ami - Get a specific Linux Amazon machine image (AMI)
+aws_iam_policy - Get a specific Identity and Access Management (IAM) policy
+aws_iam_policy_document - Generate a IAM policy document to allow EC2 to assume a role
 
 ### For Additional References
 Expressions (https://developer.hashicorp.com/terraform/language/expressions )
 Functions (https://developer.hashicorp.com/terraform/language/functions)https://developer.hashicorp.com/terraform/language/functions)
 Modules  ( https://developer.hashicorp.com/terraform/language/modules )
 Backend ( https://developer.hashicorp.com/terraform/language/settings/backends/configuration )
-   
+
+ 
