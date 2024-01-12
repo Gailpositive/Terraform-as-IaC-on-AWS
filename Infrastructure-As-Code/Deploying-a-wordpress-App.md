@@ -85,9 +85,19 @@
  ### STEP 5: Create And Update Input Variables, Provider, Local Values, And Data Sources
 * cd terraform
 <img width="948" alt="115" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/a871b01d-307e-487a-a420-f8456067cfa0">
-* 
+
+* Open variables.tf in the terraform folder
+* Update the content and save
+* Creating three input variables in the variable.tf file which define the number of availability zones, namespace, and VPC CIDR block to be used for this Terraform project's deployment
 <img width="957" alt="116" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/e7f0065e-6001-40b4-a2f7-d3d488fd59ae">
 
+* Open providers.tf in the terraform folder
+* Update the content and save
+* I am requiring that the provider used in this project to be aws, the version of the hashicorp/aws provider must be a version greater than or equal to 5.0, and that all resources created by Terraform will be tagged with Key: Management, Value: Terraform.
 <img width="950" alt="117" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d9de3089-35aa-4c81-9145-b70f9fad7075">
 
+* Open main.tf in the terraform folder
+* Update the content and save
+* The update to main.tf begins by creating local variables that define the VPC availability zone and CIDR block values, RDS instance values, EC2 instance type, and credentials for the Wordpress Admin user.
+* Next, the file defines data sources to look up definitions of the given AWS environment such as the current region, list of availability zones, ARNs of IAM policies, etc which will be used to create AWS resources.
 <img width="944" alt="118" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9b6b39e-3aff-417e-8172-b0961221ca15">
