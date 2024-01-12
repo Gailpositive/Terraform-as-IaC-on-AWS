@@ -58,7 +58,7 @@
 * Stack created
 <img width="930" alt="108" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1192e20e-920d-4c70-bfaa-0f4e74c708ba">
 
-### STEP 3: Launching Cloud9 Workspace And 
+### STEP 3: Launching Cloud9 Workspace, Setting Up My IDE And 
 * On cloud9 environment
 * Open cloud9 IDE
 <img width="928" alt="109" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5263d7fe-17e0-4a73-a632-d790285bbbb3">
@@ -73,8 +73,15 @@
 * Open a new terminal tab (Windows -> New Terminal) in the main work area
 
 ### STEP 4: Update IAM Setting For My Workspace
+* In Cloud9 IDE, click on the gear icon (top right-hand corner)
+* Select AWS Settings
+* Turn off AWS Managed temporary credentials
+* Close the Preferences tab
 <img width="967" alt="113b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/519e7333-7677-45fe-876f-0aab7e400ef7">
+* To confirm I am using the IAM role attached to the environment EC2 instance,
+* I run the command "aws sts get-caller-identity --no-cli-pager"
 <img width="929" alt="114" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d930c373-71ee-4f7d-8ad1-80feebaefd55">
+* 
 <img width="948" alt="115" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/a871b01d-307e-487a-a420-f8456067cfa0">
 <img width="957" alt="116" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/e7f0065e-6001-40b4-a2f7-d3d488fd59ae">
 
