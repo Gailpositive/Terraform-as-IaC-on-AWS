@@ -18,5 +18,15 @@
 * AWS Certificate Manager  (ACM) - provision and manage SSL/TLS certificates with AWS services and connected resources
 * Amazon CloudFront  - content delivery network (CDN) service built for high performance, security, and developer convenience
 
-* 
+## Heads Up
+* Quick links to the AWS console are using the us-east-1 as the base region. It is highly recommended that the instance profile AWSCloud9SSMInstanceProfile and the IAM role AWSCloud9SSMAccessRole must not exist on the account prior starting this project.
 
+* Check if the instance profile AWSCloud9SSMInstanceProfile exist by entering the following in an AWS CloudShell terminal. If it returns a non-empty response, then the instance profile AWSCloud9SSMInstanceProfile exist.
+* aws iam list-instance-profiles | grep AWSCloud9SSMInstanceProfile
+### You can delete the instance profile at your own risk, by entering following in an AWS CloudShell terminal.
+* aws iam detach-role-policy --role-name AWSCloud9SSMAccessRole --policy-arn $(aws iam list-attached-role-policies --role-name AWSCloud9SSMAccessRole --output text | awk '{ print $2 }')
+* aws iam remove-role-from-instance-profile --instance-profile-name AWSCloud9SSMInstanceProfile --role-name AWSCloud9SSMAccessRole
+* aws iam delete-role --role-name AWSCloud9SSMAccessRole
+* aws iam delete-instance-profile --instance-profile-name AWSCloud9SSMInstanceProfile
+
+## step 1: SET UP CLOUD 9 DEVELOPMENT AREA
