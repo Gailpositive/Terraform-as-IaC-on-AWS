@@ -114,7 +114,8 @@
 <img width="955" alt="122b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d8579069-912f-4693-a746-8d0ee72b4a60">
 
 * run terraform apply command to execute deployment
-<img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/42e2e904-cd11-45d8-aa97-ce63db197358">
+<img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/42e2e904-cd11-45d8-aa97-ce63db197358
+ <img width="936" alt="123b apply completed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ec225f0b-f3d7-4fe5-9242-63c27636bfea">
 
 * Open main.tf in the terraform folder
 * Update the content and save
@@ -126,7 +127,7 @@
 * The current region,
 * List of availability zones,
 *  ARNs of IAM policies, etc which will be used to create AWS resources.
-<img width="936" alt="123b apply completed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ec225f0b-f3d7-4fe5-9242-63c27636bfea">
+
 <img width="955" alt="119" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/6063879b-8845-4a36-a6fe-6cd7e72cf5f1">
 
 <img width="916" alt="aws vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/344b68bf-4f96-4143-810d-07e4c707f649">
