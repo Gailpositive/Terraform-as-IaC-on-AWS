@@ -29,8 +29,10 @@
 * aws iam delete-role --role-name AWSCloud9SSMAccessRole
 * aws iam delete-instance-profile --instance-profile-name AWSCloud9SSMInstanceProfile
 
-## STEP 1: Create Stack
+## STEP 1: Download Code 
 * Download yaml file into my local machine
+
+## STEP 2: Create Stack On AWS Cloudformation
 * On AWS console, open Cloudformation
 * Create stack → With new resources (standard)
 <img width="931" alt="101 create stack" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ba912dc5-e523-448a-8b11-7d52fec38bbb">
@@ -56,7 +58,8 @@
 * Stack created
 <img width="930" alt="108" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1192e20e-920d-4c70-bfaa-0f4e74c708ba">
 
-### STEP 2: Launching Cloud9 Workspace
+### STEP 3: Launching Cloud9 Workspace
+* On cloud9 environment
+* Open cloud9 IDE
 <img width="928" alt="109" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5263d7fe-17e0-4a73-a632-d790285bbbb3">
-
 <img width="956" alt="110" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/f9b1c645-eeb1-40f7-9b67-07c7329c3568">
