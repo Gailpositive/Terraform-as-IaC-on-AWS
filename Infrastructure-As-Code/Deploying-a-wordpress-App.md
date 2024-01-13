@@ -178,7 +178,8 @@
 * Run the command terraform apply to apply the deployment
 <img width="959" alt="127 validate syntax plan the deployment apply deployment was succeefusful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5b242a9a-c86f-4c4b-82ba-680a0dd9625b">
 
-### Review Deployment In VPC components: To Verify resources created is mapped with my Terraform deployment.
+### Check VPC deployment components to ensure that the created resources are aligned with my Terraform deployment.
+
 * VPC
 <img width="936" alt="128 vpc created" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/96756e74-dc18-4dcb-beff-5b98a53c42fc">
 
