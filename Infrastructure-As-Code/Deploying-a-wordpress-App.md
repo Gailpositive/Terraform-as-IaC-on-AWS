@@ -116,7 +116,7 @@
 <img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/3ed54300-b6ab-4c40-8f97-4f93a6481267">
  <img width="936" alt="123b apply completed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ec225f0b-f3d7-4fe5-9242-63c27636bfea">
 
-### STEP 6: Create Resources for IAM that, will allow EC2 instances to read from an S3 bucket, as well get full access permissions to the RDS resources that will be created later on.
+### STEP 6: Create and deploy Resources for IAM that, will allow EC2 instances to read from an S3 bucket, as well get full access permissions to the RDS resources that will be created later on.
 <img width="916" alt="aws vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/344b68bf-4f96-4143-810d-07e4c707f649">
 
 * Open main.tf in the terraform folder
@@ -147,7 +147,7 @@
 
 <img width="948" alt="125 instance profile successful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/282e5a2b-37b0-4088-beb8-61eab6976bda">
 
-### STEP 7: Create Resources for Networking To Host Application Which Includes The Creation Of a New VPC (Virtual Private Cloud) With All the Necessary Resources To Run Sample Application
+### STEP 7: Create and deploy Resources for Networking To Host Application Which Includes The Creation Of a New VPC (Virtual Private Cloud) With All the Necessary Resources To Run Sample Application
 
 <img width="665" alt="networking vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/119e86c5-6a21-451b-9563-319e493373ab">
 
@@ -187,4 +187,27 @@
 * Nat getaways
 <img width="922" alt="129e  Nat gateway" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/0b22dc90-6f1f-44a6-8405-7b138f3cd054">
 
-### STEP 7: Create Resources for Security
+### STEP 7: Create and deploy Resources for Security: Security Groups and VPC endpoints in my VPC. A VPC endpoint enables a private connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. Amazon VPC instances do not require public IP addresses to communicate with resources of the service. Traffic between an Amazon VPC and a service does not leave the Amazon network.
+<img width="729" alt="security images" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1921c6d6-5fbe-446d-a6a5-b872abe2d310">
+
+* Open main.tf in the terraform folder
+* Append the content and save
+* By updating the main.tf, I am  creating security groups to restrict access to my application, database, network file storage, and creating VPC endpoints to enable AWS services like S3 to access my AWS resources through private ingresses.
+* Run the command terraform validate to validate syntax
+<img width="949" alt="130 security groups append" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/58abf4b0-824d-409e-852b-f299e16a52dc">
+
+* Run the command terraform validate to valid the syntax
+* Run the command terraform plan to plan the deployment
+* Run the command terraform apply to apply deployment
+<img width="944" alt="131 validate plan apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ea568f80-1d2d-47dc-bdd6-7e247d4f932e">
+  
+### Review Deployment On The VPC Console
+* Security groups
+<img width="922" alt="132 security groups" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/e1dcb0c0-1989-4c6a-9c33-5eeb756bf825">
+
+* Endpoints
+<img width="921" alt="132b endpoint" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/559f0b05-a942-4a1c-9584-b66d1e269fce">
+
+### STEP 8: Create and deploy Resources to host  Application: RDS MySQL database, a load balancer, an autoscaling group, an EFS file system, an S3 bucket, and many more resources,
+
+<img width="707" alt="terraform aws image2 archetectual" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/14393666-8337-4b2b-9102-8ae8659d3127">
