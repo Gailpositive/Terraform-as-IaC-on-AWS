@@ -1,6 +1,7 @@
 # DEPLOYING A WORDPRESS APLLICATION ON AWS
 
-### Leveraging Terraform as the Infrastructure as Code (IaC) tool to deploy a highly available Wordpress application in a single region. It will be configured to leverage a Multi-AZ (data replication across multiple AZs) MySQL database and an auto-scaler based on CPU utilization for web hosting.
+### Using Terraform, we're setting up a reliable WordPress app in one place. It'll use a Multi-AZ setup for the database to make data safer and an auto-scaler for web hosting, adjusting based on how much the computer is being used
+
 
 #### At The End Of This Project, I will Be Able To Understand the basic building blocks of Terraform (providers, data sources, resources, etc)
 #### Develop your first Terraform project on Amazon Web Services
