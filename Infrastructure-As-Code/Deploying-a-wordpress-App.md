@@ -195,7 +195,8 @@
 * Nat getaways
 <img width="922" alt="129e  Nat gateway" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/0b22dc90-6f1f-44a6-8405-7b138f3cd054">
 
-### STEP 7: Create and deploy Resources for Security: Security Groups and VPC endpoints in my VPC. A VPC endpoint enables a private connect to supported AWS services and VPC endpoint services powered by AWS PrivateLink. Amazon VPC instances do not require public IP addresses to communicate with resources of the service. Traffic between an Amazon VPC and a service does not leave the Amazon network.
+### STEP 7: Create and deploy security resources, including Security Groups and VPC endpoints, within my VPC. VPC endpoints facilitate private connections to supported AWS services and VPC endpoint services through AWS PrivateLink. Amazon VPC instances can communicate with service resources without needing public IP addresses, and the traffic stays within the Amazon network.
+
 <img width="729" alt="security images" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1921c6d6-5fbe-446d-a6a5-b872abe2d310">
 
 * Open main.tf in the terraform folder
