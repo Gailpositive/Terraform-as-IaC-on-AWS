@@ -1,4 +1,4 @@
-# DEPLOYING A WORDPRESS APLLICATION ON AWS Using Terraform 
+# DEPLOYING A WORDPRESS APLLICATION ON AWS USING TERRAFORM
 
 ### Using Terraform, we're setting up a reliable WordPress app in one place. It'll use a Multi-AZ setup for the database to make data safer and an auto-scaler for web hosting, adjusting based on how much the computer is being used
 
