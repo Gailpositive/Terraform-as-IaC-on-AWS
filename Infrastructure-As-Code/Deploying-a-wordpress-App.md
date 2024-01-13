@@ -211,3 +211,64 @@
 ### STEP 8: Create and deploy Resources to host  Application: RDS MySQL database, a load balancer, an autoscaling group, an EFS file system, an S3 bucket, and many more resources,
 
 <img width="707" alt="terraform aws image2 archetectual" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/14393666-8337-4b2b-9102-8ae8659d3127">
+
+* Creating Resources
+* aws_db_subnet_group - Create a subnet group for database across availability zones
+* random_password - Create a random password
+* aws_secretsmanager_secret - Create a Secrets Manager entry
+* aws_secretsmanager_secret_version - Create a value for the Secrets Manager entry
+* aws_db_instance - Create a MySQL database
+* aws_efs_file_system - Create an EFS volume
+* aws_efs_mount_target - Create a configuration where the EFS volume to a set of instances
+* aws_instance - Create an EC2 that bootstrap the Wordpress application
+* aws_ami_copy - Create a copy of the Amazon Machine Image (AMI) being used
+* aws_lb - Create a application load balancer (ALB) for the Wordpress web application
+* aws_launch_template - Create a launch template that hosts the Wordpress web application
+* aws_autoscaling_group - Create a auto-scaler group that scale the Wordpress web application instances
+* aws_autoscaling_policy - Create a auto scaling policy
+* aws_cloudwatch_metric_alarm - Create a CloudWatch Metric Alarm
+* aws_lb_target_group - Create a target group to attach the load balancer for the Wordpress web application
+* aws_lb_listener - Create a load balancer listener for the ALB
+* tls_private_key - Create a TLS private key
+* tls_self_signed_cert - Create a public TLS certificate signed by the private key
+* aws_acm_certificate - Create an ACM certificate entry with the TLS public certificate and private key
+* aws_s3_bucket - Create a private S3 Bucket
+* aws_s3_bucket_public_access_block - Create a public access block which disable public access for the private S3 Bucket
+* aws_s3_object - An object of S3, typically represent data similar file
+* aws_cloudfront_distribution - Create a CloudFront distribution for the Wordpress web application
+* aws_cloudfront_cache_policy - Create a CloudFront cache policy for the Wordpress web application
+
+* Open main.tf in the terraform folder
+* Append the content and save
+<img width="954" alt="133" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/27742096-8d2f-436d-a453-d3640045c23d">
+
+* Run the command terraform validate to valid the syntax
+* Run the command terraform plan to plan the deployment
+* Run the command terraform apply to apply deployment
+<img width="959" alt="134 application installed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/2b756a62-0172-4b11-b29c-94ad671d0c55">
+
+### STEP 9: Create Outputs for Application: Exposing the endpoints of the Load Balancer and  CloudFront distribution, to test if application has been deployed correctly.
+* alb_endpoint_uri - Application Load Balancer Uniform Resource Identifier
+* alb_endpoint_url - Application Load Balancer Uniform Resource Locator
+* cloudfront_endpoint_url - CloudFront Uniform Resource Identifier
+
+* Open outputs.tf in the terraform folder
+* Append the content and save file
+<img width="944" alt="135 output variables" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ea36507c-bba1-40f2-be9d-a73721376304">
+
+* Run the command terraform validate to valid the syntax
+* Run the command terraform plan to plan the deployment
+* Run the command terraform apply to apply deployment
+<img width="953" alt="136" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/81110ee1-e68e-4591-b51a-13da49255bb2">
+
+### STEP 10: Validate Application Deployment
+* Successful comlipetion of all steps will give an output like this
+* Copy the value from cloudfront_endpoint_url output and enter it on a new tab in current browser
+<img width="810" alt="output validation" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/20bc55cb-c613-424e-80db-767ed8196254">
+
+* Verify application webpage
+* Application confirmed
+<img width="958" alt="137 url on broswer" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/0efb3f39-6f65-4158-a9c3-aee03d9d431b">
+<img width="948" alt="137b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b767c5d0-5383-48e7-9e73-7ca2b721bc48">
+
+### STEP 11: Inspect State file
