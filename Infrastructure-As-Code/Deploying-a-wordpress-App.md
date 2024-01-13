@@ -168,8 +168,23 @@
 
 * Run the command terraform validate to validate syntax
 * Run the command terraform plan to plan the deployment
-* Run the command terraform apply 
+* Run the command terraform apply to apply the deployment
 <img width="959" alt="127 validate syntax plan the deployment apply deployment was succeefusful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5b242a9a-c86f-4c4b-82ba-680a0dd9625b">
 
+### Review Deployment In VPC components: To Verify resources created is mapped with my Terraform deployment.
+* VPC
+<img width="936" alt="128 vpc created" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/96756e74-dc18-4dcb-beff-5b98a53c42fc">
 
-  
+* SUBNETS
+ <img width="936" alt="129 private subnet" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/82a42097-d797-4aee-b3c1-b280ee2d0d45">
+
+* ROUTE TABLE
+<img width="935" alt="129c subnets created" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/0c64fed6-be49-4cbc-ad07-991dd4f618af">
+
+* Internet gateways
+<img width="938" alt="129d" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/a0fae19f-2964-4fc1-807d-d6843e306e17">
+
+* Nat getaways
+<img width="922" alt="129e  Nat gateway" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/0b22dc90-6f1f-44a6-8405-7b138f3cd054">
+
+### STEP 7: Create Resources for Security
