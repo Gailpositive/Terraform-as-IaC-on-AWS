@@ -2,12 +2,12 @@
 
 ### Using Terraform, we're setting up a reliable WordPress app in one place. It'll use a Multi-AZ setup for the database to make data safer and an auto-scaler for web hosting, adjusting based on how much the computer is being used
 
+<img width="638" alt="images" src="https://github.com/Gailpositive/Terraform-on-AWS/assets/111061512/d57717f6-3790-453e-8f41-58a3f6c1de15">
 
 #### At The End Of This Project, I will Be Able To Understand the basic building blocks of Terraform (providers, data sources, resources, etc)
 #### Develop Terraform project on Amazon Web Services
 #### Getting started into a typical workflow for Terraform
 #### Update and deploy changes into my infrastructure environment
-<img width="638" alt="images" src="https://github.com/Gailpositive/Terraform-on-AWS/assets/111061512/d57717f6-3790-453e-8f41-58a3f6c1de15">
 
 ## Architecture
 <img width="707" alt="terraform aws image2 archetectual" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5b17031e-c2cf-4b04-9c84-41115624df4f">
