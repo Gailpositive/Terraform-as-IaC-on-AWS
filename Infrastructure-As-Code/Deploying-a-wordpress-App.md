@@ -130,13 +130,24 @@
 * Run the command terraform apply to apply the deployment. Type 'yes' to confirm the action
 <img width="955" alt="119" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/6063879b-8845-4a36-a6fe-6cd7e72cf5f1">
 
-
-
+### Review Deployment
+* Navigate to IAM roles to confirm creation resources and inspections of the roles:
+* App
 <img width="916" alt="124a" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9cd1f16-026b-4b1b-a290-aefca60641a0">
-
+* web_hosting
 <img width="885" alt="124b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/2d29eec1-f407-4951-b3d1-e5d6f515175c">
 
+* In the Tag tab,  the role is tagged with Key: Management, Value: Terraform, from previous section that all resources created by Terraform has been configured with this tag.
+<img width="914" alt="124c" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/7142f02d-b51d-46b7-9ec1-803fa069fd39">
 
+* To quickly confirm the successful creation of the instance profiles,
+* I run the following command: app-profile, web-hosting-profile
+* "aws iam get-instance-profile --instance-profile-name app-profile | grep InstanceProfile -q && echo "Successfully created app-profile" || echo "Creation of app-profile was successful"
+* aws iam get-instance-profile --instance-profile-name web-hosting-profile | grep InstanceProfile -q && echo "Successfully created web-hosting-profile" || echo "Creation of web-hosting-profile was unsuccessful"
+
+<img width="948" alt="125 instance profile successful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/282e5a2b-37b0-4088-beb8-61eab6976bda">
+
+### STEP 7: Create Resources for Networking To Host Application Which Includes The Creation Of a New VPC (Virtual Private Cloud) With All the Necessary Resources To Run Sample Application
 
 
 
