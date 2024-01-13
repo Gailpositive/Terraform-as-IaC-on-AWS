@@ -1,6 +1,11 @@
-# Leveraging Terraform as the Infrastructure as Code (IaC) tool to deploy a highly available Wordpress application in a single region. It will be configured to leverage a Multi-AZ (data replication across multiple AZs) MySQL database and an auto-scaler based on CPU utilization for web hosting.
+# DEPLOYING A WORDPRESS APLLICATION ON AWS
 
+### Leveraging Terraform as the Infrastructure as Code (IaC) tool to deploy a highly available Wordpress application in a single region. It will be configured to leverage a Multi-AZ (data replication across multiple AZs) MySQL database and an auto-scaler based on CPU utilization for web hosting.
 
+#### At The End Of This Project, I will Be Able To Understand the basic building blocks of Terraform (providers, data sources, resources, etc)
+#### Develop your first Terraform project on Amazon Web Services
+#### Getting started into a typical workflow for Terraform
+#### Update and deploy changes into your infrastructure environment
 <img width="638" alt="images" src="https://github.com/Gailpositive/Terraform-on-AWS/assets/111061512/d57717f6-3790-453e-8f41-58a3f6c1de15">
 
 ## Architecture
@@ -272,3 +277,27 @@
 <img width="948" alt="137b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b767c5d0-5383-48e7-9e73-7ca2b721bc48">
 
 ### STEP 11: Inspect State file
+* Open terraform.tfstate in the terraform folder
+* Preview it
+<img width="940" alt="138 preview state file" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1d9519b6-307b-4654-980d-0b09922e5630">
+
+### STEP 12: Destroy project automatedly
+* Run the command terraform destroy to destroy the deploymen
+<img width="960" alt="139 destroy terraform and clean up cloudformation" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/8fe52913-cde6-4a8e-9b37-d82c174c2965">
+
+
+### Summary
+Workshop Completion
+Congratulations on completing the workshop! By completing this workshop, you were able to:
+
+
+
+What can you do with Terraform in the future
+Create a continuous integration and continuous deployment CI/CD pipeline
+Use Terraform to create, provision, and bootstrap a demo across various providers, clone new environments or regions with minor adjustments
+Ease integration or experiment of new services like Elastic Kubernetes Service (EKS) clusters into a Terraform managed deployment
+
+
+#### Bonus Challenge: Inspect the tfstate file and locate some security issue(s) .
+Hint #1 - Look at the local variable code block for a sensitive value in main.tf and inspect the terraform.tfstate
+Hint #2 - There is another sensitive value, see if you can locate it in the terraform.tfstate
