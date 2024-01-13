@@ -102,7 +102,6 @@
 * Next, the file defines data sources to look up definitions of the given AWS environment such as the current region, list of availability zones, ARNs of IAM policies, etc which will be used to create AWS resources.
 <img width="944" alt="118" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9b6b39e-3aff-417e-8172-b0961221ca15">
 
-
 * run terraform init command 
 <img width="940" alt="120 terraform init" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/cd71690e-0bf7-411c-a067-d063c212eaba">
 
@@ -114,33 +113,34 @@
 <img width="955" alt="122b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/d8579069-912f-4693-a746-8d0ee72b4a60">
 
 * run terraform apply command to execute deployment
-<img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/42e2e904-cd11-45d8-aa97-ce63db197358
+<img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/3ed54300-b6ab-4c40-8f97-4f93a6481267">
  <img width="936" alt="123b apply completed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ec225f0b-f3d7-4fe5-9242-63c27636bfea">
 
-* Open main.tf in the terraform folder
-* Update the content and save
-* Updating main.tf begins by creating local variables that define the VPC availability zone and CIDR block values,
-* RDS instance values,
-* EC2 instance type,
-* And credentials for the Wordpress Admin user.
-* Next, the file defines data sources to look up definitions of the given AWS environment such as:
-* The current region,
-* List of availability zones,
-*  ARNs of IAM policies, etc which will be used to create AWS resources.
-
-<img width="955" alt="119" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/6063879b-8845-4a36-a6fe-6cd7e72cf5f1">
-
+### STEP 6: Create Resources for IAM that, will allow EC2 instances to read from an S3 bucket, as well get full access permissions to the RDS resources that will be created later on.
 <img width="916" alt="aws vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/344b68bf-4f96-4143-810d-07e4c707f649">
 
-### STEP 6: Create Resources for IAM that will allow EC2 instances to read from an S3 bucket, as well get full access permissions to the RDS resources that will create later on.
 * Open main.tf in the terraform folder
 * Append the content and save
 * By updating the main.tf, I am creating IAM roles(aws_iam_role)
 * And instance profiles (  aws_iam_instance_profile - an IAM EC2 Instance profile of a IAM role to attach to an EC2 instance )  from the data sources loaded in the previous step
 * And performing a terraform apply to deploy the resources into my AWS environment.
+* Run the command terraform init to fetch the provider to create resources
+* Run the command terraform validate to validate syntax
+* Run the command terraform plan to plan the deployment
+* Run the command terraform apply to apply the deployment. Type 'yes' to confirm the action
+<img width="955" alt="119" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/6063879b-8845-4a36-a6fe-6cd7e72cf5f1">
+
+
+
 <img width="916" alt="124a" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/b9cd1f16-026b-4b1b-a290-aefca60641a0">
 
 <img width="885" alt="124b" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/2d29eec1-f407-4951-b3d1-e5d6f515175c">
+
+
+
+
+
+
 
 
   
