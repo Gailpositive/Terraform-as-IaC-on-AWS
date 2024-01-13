@@ -122,7 +122,8 @@
 <img width="959" alt="123 apply" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/3ed54300-b6ab-4c40-8f97-4f93a6481267">
  <img width="936" alt="123b apply completed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/ec225f0b-f3d7-4fe5-9242-63c27636bfea">
 
-### STEP 6: Create and deploy Resources for IAM that, will allow EC2 instances to read from an S3 bucket, as well get full access permissions to the RDS resources that will be created later on.
+### STEP 6: Create and deploy IAM resources to enable EC2 instances to read from an S3 bucket and grant full access permissions to RDS resources to be created later.
+
 <img width="916" alt="aws vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/344b68bf-4f96-4143-810d-07e4c707f649">
 
 * Open main.tf in the terraform folder
