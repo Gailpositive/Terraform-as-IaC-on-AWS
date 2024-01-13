@@ -217,7 +217,7 @@
 * Endpoints
 <img width="921" alt="132b endpoint" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/559f0b05-a942-4a1c-9584-b66d1e269fce">
 
-### STEP 8: Create and deploy Resources to host  Application: RDS MySQL database, a load balancer, an autoscaling group, an EFS file system, an S3 bucket, and many more resources,
+### STEP 8: Create and deploy resources for hosting the application, including an RDS MySQL database, a load balancer, an autoscaling group, an EFS file system, an S3 bucket, and various other resources.
 
 <img width="707" alt="terraform aws image2 archetectual" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/14393666-8337-4b2b-9102-8ae8659d3127">
 
@@ -256,7 +256,8 @@
 * Run the command terraform apply to apply deployment
 <img width="959" alt="134 application installed" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/2b756a62-0172-4b11-b29c-94ad671d0c55">
 
-### STEP 9: Create Outputs for Application: Exposing the endpoints of the Load Balancer and  CloudFront distribution, to test if application has been deployed correctly.
+### STEP 9: Generate outputs for the application, exposing the endpoints of the Load Balancer and CloudFront distribution for testing the correct deployment of the application.
+
 * alb_endpoint_uri - Application Load Balancer Uniform Resource Identifier
 * alb_endpoint_url - Application Load Balancer Uniform Resource Locator
 * cloudfront_endpoint_url - CloudFront Uniform Resource Identifier
@@ -271,6 +272,7 @@
 <img width="953" alt="136" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/81110ee1-e68e-4591-b51a-13da49255bb2">
 
 ### STEP 10: Validate Application Deployment
+
 * Successful comlipetion of all steps will give an output like this
 * Copy the value from cloudfront_endpoint_url output and enter it on a new tab in current browser
 <img width="810" alt="output validation" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/20bc55cb-c613-424e-80db-767ed8196254">
@@ -286,6 +288,7 @@
 <img width="940" alt="138 preview state file" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/1d9519b6-307b-4654-980d-0b09922e5630">
 
 ### STEP 12: Destroy project automatedly
+
 * Run the command terraform destroy to destroy the deploymen
 <img width="960" alt="139 destroy terraform and clean up cloudformation" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/8fe52913-cde6-4a8e-9b37-d82c174c2965">
 
