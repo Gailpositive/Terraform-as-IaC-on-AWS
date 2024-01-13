@@ -4,7 +4,7 @@
 
 
 #### At The End Of This Project, I will Be Able To Understand the basic building blocks of Terraform (providers, data sources, resources, etc)
-#### Develop my first Terraform project on Amazon Web Services
+#### Develop Terraform project on Amazon Web Services
 #### Getting started into a typical workflow for Terraform
 #### Update and deploy changes into your infrastructure environment
 <img width="638" alt="images" src="https://github.com/Gailpositive/Terraform-on-AWS/assets/111061512/d57717f6-3790-453e-8f41-58a3f6c1de15">
