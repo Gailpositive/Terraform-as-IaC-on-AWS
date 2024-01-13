@@ -149,9 +149,27 @@
 
 ### STEP 7: Create Resources for Networking To Host Application Which Includes The Creation Of a New VPC (Virtual Private Cloud) With All the Necessary Resources To Run Sample Application
 
+<img width="665" alt="networking vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/119e86c5-6a21-451b-9563-319e493373ab">
 
+### Creating Resources
+* aws_vpc - Create a default VPC
+* aws_subnet - Create a subnet within a VPC
+* aws_internet_gateway - Allow communication between VPC and the internet
+* aws_route_table - Create a routing table to control where the network traffic is directed
+* aws_main_route_table_association - Set the default network routing table for the default VPC
+* aws_route_table_association - Associate the route table to a VPC subnet
+* aws_nat_gateway - Create a Network Address Translation (NAT) gateway to allow private subnet to access services
+* aws_eip - Create an Elastic IP (EIP) for the NAT Gateways
 
+* Open main.tf in the terraform folder
+* Append the content and save
+* By updating the main.tf you are creating your VPC network components such as the subnets, internet gateway, route tables, and NAT gateway.
+  <img width="937" alt="126 apehend vpc network" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/686bea82-7542-4dcd-a66a-baae9913ba61">
 
+* Run the command terraform validate to validate syntax
+* Run the command terraform plan to plan the deployment
+* Run the command terraform apply 
+<img width="959" alt="127 validate syntax plan the deployment apply deployment was succeefusful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/5b242a9a-c86f-4c4b-82ba-680a0dd9625b">
 
 
   
