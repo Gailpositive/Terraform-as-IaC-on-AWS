@@ -153,7 +153,7 @@
 
 <img width="948" alt="125 instance profile successful" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/282e5a2b-37b0-4088-beb8-61eab6976bda">
 
-### STEP 7: Create and deploy Resources for Networking To Host Application Which Includes The Creation Of a New VPC (Virtual Private Cloud) With All the Necessary Resources To Run Sample Application
+### STEP 7: Create and deploy networking resources for hosting an application, involving the creation of a new Virtual Private Cloud (VPC) with all essential resources to run a sample application
 
 <img width="665" alt="networking vpc image" src="https://github.com/Gailpositive/Terraform-as-IaC-on-AWS/assets/111061512/119e86c5-6a21-451b-9563-319e493373ab">
 
