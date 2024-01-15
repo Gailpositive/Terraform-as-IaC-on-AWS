@@ -1,6 +1,6 @@
 # Deploying WordPress on AWS With Terraform.
 
-### Using Terraform, we're setting up a reliable WordPress app in one place. It'll use a Multi-AZ setup for the database to make data safer and an auto-scaler for web hosting, adjusting based on how much the computer is being used
+### Using Terraform, I'll setting up a reliable WordPress app in one place. It'll use a Multi-AZ setup for the database to make data safer and an auto-scaler for web hosting, adjusting based on how much the computer is being used
 
 <img width="638" alt="images" src="https://github.com/Gailpositive/Terraform-on-AWS/assets/111061512/d57717f6-3790-453e-8f41-58a3f6c1de15">
 
